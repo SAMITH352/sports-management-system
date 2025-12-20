@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .button-container a {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+        }
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; margin-top: 20px;">Viewer Dashboard</h1>
+        <a href="logout.php" class="logout">Logout</a>
+    </header>
+    <main>
+        <section class="button-container">
+            <a href="view_schedule.php">Match Schedule</a>
+            <a href="view_scoreboard.php">Scoreboard</a>
+            <a href="#">Updates</a>
+        </section>
+    </main>
+
+    <script>
+        // 🔹 Disable Back Button After Logout
+        window.history.pushState(null, "", window.location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+</body>
+</html>
+

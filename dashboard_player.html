@@ -1,0 +1,80 @@
+<?php
+// Start session
+session_start();
+
+// Check if the user is logged in as a player
+if (!isset($_SESSION['user_type']) || $_SESSION['user_type'] !== 'player') {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .logout {
+            text-decoration: none;
+            color: white;
+            background: red;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Player Dashboard</h1>
+        <a href="index.html" class="logout">Logout</a>
+    </div>
+    <div class="container">
+      
+        <a button>My Profile</a>
+        <a href="view_schedule.php" class="btn">View Schedule</a>
+   
+        <a button>My Profile</a>
+    </div>
+</body>
+</html>

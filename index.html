@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KCT Sports Hub</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/script.js" defer></script>
+        <style>
+            body {
+                background: url('assets/images/background.jpg') no-repeat center center/cover;
+                position: relative;
+            }
+
+            /* Optional: Dark Overlay for Better Readability */
+            body::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+                z-index: -1;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">KCT Sports Hub</div>
+            <nav>
+                <a href="login.html" style="color: white;">Login</a>  
+                <a href="signup.html" class="signup" style="color: white;">Sign Up</a>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <h1 style="color: white;">Welcome to KCT Sports Hub</h1>
+            <p style="color: white;"> "Seamless Scheduling, Fair Play, Ultimate Glory!".</p>
+        </section>
+        
+        <section class="sports-categories" id="sports-categories">
+            <h2 style="color: black;">Sports We Cover</h2>
+            <div class="sports-list">
+<div><a href="cricket.html" style="color: white;">Cricket</a></div>
+<div><a href="football.html" style="color: white;">Football</a></div>
+<div><a href="hockey.html" style="color: white;">Hockey</a></div>
+<div><a href="tennis.html" style="color: white;">Tennis</a></div>
+            </div>
+        </section>
+        
+        <section class="upcoming-matches">
+            <h2 style="color: black;">Upcoming Matches</h2>
+            <div class="match-details">
+                <p style="color: black;">Football: Team Whale vs Team Shark - Dec 12, 2025</p>
+                <p style="color: black;">Cricket: Team Lions vs Team Rhino - May 25, 2025</p>
+            </div>
+        </section>
+        
+        <section class="news">
+            <h2 style="color: black;">Latest News</h2>
+            <p style="color: black;">Stay updated with the latest sports events and highlights happening at KCT.</p>
+        </section>
+        
+        <section class="gallery">
+            <h2 style="color: black;">Gallery</h2>
+            <div class="gallery-images">
+                <img src="assets/images/hockey.jpg" alt="Sports Event">
+                <img src="assets/images/football.jpg" alt="Match in Action">
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 style="color: black;">About Us</h2>
+            <p style="color: black;">
+                Welcome to KCT Tournament Management System (KCTMS)! 
+                The KCT Tournament Management System (KCTMS) is your one-stop platform for managing and tracking institute sports tournaments with ease. 
+                Whether you are a player, organizer, or sports enthusiast, KCTMS provides a user-friendly interface to view schedules, track scores, and manage tournaments efficiently.
+            </p>
+        </section>
+        
+        <footer>
+            <p style="color: black;">&copy; 2025 KCT Sports Nexus. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
